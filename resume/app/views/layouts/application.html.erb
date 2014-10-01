@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Indie+Flower|Coming+Soon|Shadows+Into+Light+Two|Amatic+SC|Handlee' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=News+Cycle|Archivo+Narrow' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <nav>
+
+      <div id="katie" class="nav_buttons"><a href='/'>Home</a></div>
+      <div id="resume" class="nav_buttons"><a href='/education'>Education</a></div>
+      <div id="mywork" class="nav_buttons"><a href='/experience'>Experience</a></div>
+      <div id="about" class="nav_buttons"><a href='/additional'>Additional</a></div>
+      <div id="contact" class="nav_buttons"><a href='/contact'>Contact Me</a></div>
+    </nav>
+<%= yield %>
+
+</body>
+</html>
